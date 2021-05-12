@@ -49,7 +49,22 @@ a {
 .block {
   display: block;
 }
-
+.con {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .top-bar > .con > div:first-child {
+    width:240px;
+  }
+  
+  .top-bar > .con > div:nth-child(2) {
+    width:calc(100% - 240px - 650px);
+  }
+  
+  .top-bar > .con > div:last-child {
+    width:650px;
+  }
+  
 .top-bar {
   background-color: beige;
   color: black;
