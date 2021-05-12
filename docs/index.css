@@ -1,7 +1,6 @@
-/* 로보토 Condensed 폰트 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
-/* 롯데마트드림 폰트 */
 @font-face {
   font-family: "LotteMartDream";
   font-style: normal;
@@ -29,8 +28,6 @@
 html {
   font-family: "Roboto Condensed", "LotteMartDream", sans-serif;
 }
-
-/* 노말 */
 body,
 ul,
 li {
@@ -44,7 +41,6 @@ a {
   text-decoration: none;
 }
 
-/* 라이브러리 */
 .inline-grid {
   font-size: 0;
 }
@@ -85,12 +81,10 @@ a {
   margin-right:auto;
 }
 
-/* 커스텀 */
 .con {
   width:1200px;
 }
 
-/* 탑바 시작 */
 .top-bar {
   background-color: beige;
   color: black;
@@ -119,18 +113,15 @@ a {
   position: relative;
 }
 
-/* 모든 메뉴 아이템 텍스트 */
 .top-bar__menu-box-1 ul>li>a {
   display: block;
   white-space: nowrap;
 }
 
-/* 1차 메뉴 아이템 텍스트 */
 .top-bar__menu-box-1>ul>li>a {
   padding: 22.5px 30px;
 }
 
-/* 서브 메뉴 아이템 텍스트 */
 .top-bar__menu-box-1>ul ul>li>a {
   padding: 22.5px 0;
   text-align: center;
@@ -154,18 +145,12 @@ a {
 .top-bar__menu-box-1>ul>li:hover>ul {
   display: block;
 }
-/* 탑바 끝 */
 
-/* work-list-box 시작 */
 .work-list-box > ul > li {
   width:25%;
-  /* 이렇게 해도 이미지 하단에 여백이 제거됩니다. */
-  /* line-height:0; */
 }
 
 .work-list-box > ul > li > img {
   width:100%;
-  /* 이렇게 하면 이미지가 inline 요소가 아니게 되니, 하단 여백의 근원이었던 line(줄) 자체가 없어집니다. */
   display: block;
 }
-/* work-list-box 끝 */
