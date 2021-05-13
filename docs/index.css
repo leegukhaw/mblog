@@ -1,33 +1,42 @@
+/* 로보토 Condensed 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
-
+/* 롯데마트드림 폰트 */
 @font-face {
   font-family: "LotteMartDream";
   font-style: normal;
   font-weight: 400;
-  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2") format("woff2"),
-    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff") format("woff");
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "LotteMartDream";
   font-style: normal;
   font-weight: 700;
-  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2") format("woff2"),
-    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff") format("woff");
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "LotteMartDream";
   font-style: normal;
   font-weight: 300;
-  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2") format("woff2"),
-    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff") format("woff");
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff")
+      format("woff");
 }
 
 html {
   font-family: "Roboto Condensed", "LotteMartDream", sans-serif;
 }
+
+/* 노말 */
 body,
 ul,
 li {
@@ -41,11 +50,12 @@ a {
   text-decoration: none;
 }
 
+/* 라이브러리 */
 .inline-grid {
   font-size: 0;
 }
 
-.inline-grid>* {
+.inline-grid > * {
   font-size: 1rem;
   display: inline-block;
   box-sizing: border-box;
@@ -77,28 +87,35 @@ a {
 }
 
 .con {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+/* 커스텀 */
 .con {
-  width:1200px;
+  width: 1200px;
 }
 
+/* 탑바 시작 */
 .top-bar {
   background-color: beige;
   color: black;
 }
 
-.top-bar>.con>div:first-child {
+.top-bar > .con > div:first-child {
   width: 240px;
 }
 
-.top-bar>.con>div:nth-child(2) {
+.top-bar > .con > div:nth-child(2) {
   width: calc(100% - 240px - 650px);
 }
 
-.top-bar>.con>div:last-child {
+.top-bar > .con > div:last-child {
   width: 650px;
 }
 
@@ -108,51 +125,69 @@ a {
   padding: 20px;
 }
 
-.top-bar__menu-box-1>ul>li {
+.top-bar__menu-box-1 > ul > li {
   font-size: 1.05rem;
   position: relative;
 }
 
-.top-bar__menu-box-1 ul>li>a {
+/* 모든 메뉴 아이템 텍스트 */
+.top-bar__menu-box-1 ul > li > a {
   display: block;
   white-space: nowrap;
 }
 
-.top-bar__menu-box-1>ul>li>a {
+/* 1차 메뉴 아이템 텍스트 */
+.top-bar__menu-box-1 > ul > li > a {
   padding: 22.5px 30px;
 }
 
-.top-bar__menu-box-1>ul ul>li>a {
+/* 서브 메뉴 아이템 텍스트 */
+.top-bar__menu-box-1 > ul ul > li > a {
   padding: 22.5px 0;
   text-align: center;
 }
 
-.top-bar__menu-box-1 ul>li:hover>a {
+.top-bar__menu-box-1 ul > li:hover > a {
   background-color: beige;
-  color:black;
+  color: black;
 }
 
-.top-bar__menu-box-1>ul>li>ul {
+.top-bar__menu-box-1 > ul > li > ul {
   display: none;
   position: absolute;
-  background-color :white;
+  background-color: white;
   top: 100%;
   left: 0;
   width: 100%;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.top-bar__menu-box-1>ul>li:hover>ul {
+.top-bar__menu-box-1 > ul > li:hover > ul {
   display: block;
+}
+/* 탑바 끝 */
+
+/* section-0 */
+.section-0 {
+  margin-top:20px;
+}
+
+/* work-list-box 시작 */
+.work-list-box {
+}
+
+.work-list-box > ul {
+  margin-left:-10px;
+  margin-right:-10px;
 }
 
 .work-list-box > ul > li {
-  width:25%;
+  margin-top:20px;
+  width:20%;
+  padding:0 10px;
 }
 
-.work-list-box > ul > li > img {
-  width:100%;
-  display: block;
+.work-list-box > ul > li > div {
 }
 .img{
   position: relative;
@@ -171,9 +206,10 @@ a {
   position: absolute;
   top:100%;
   left:50%;
-  transform: translate(-170%, -50%);                                                                   
+  transform: translate(-60%, -250%);                                                                   
   font-size:5rem;
-  color: white;
+  color: orange;
   z-index: 2;
   text-align: center;
 }
+/* work-list-box 끝 */
